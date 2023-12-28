@@ -4,43 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>15cppgames.com</title>
+    <!-- Add Bulma CSS framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
+            background-color: #ffffff; /* White background */
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         h1 {
-            color: #333;
+            color: #3273dc; /* Dark blue title */
         }
 
         ul {
-            list-style-type: none;
             padding: 0;
+            list-style: none;
+            text-align: center; /* Center the list items */
         }
 
         li {
             margin: 10px;
+            background-color: #ebfbee; /* Light green list item background */
+            padding: 10px;
+            border-radius: 5px;
         }
 
         a {
             text-decoration: none;
-            color: #0066cc;
+            color: #196127; /* Dark green link color */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Game symbols */
+        .game-symbol {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .game-symbol::before {
+            content: "\1F3AE"; /* Game controller emoji */
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .snake-symbol::before {
+            content: "\1F40D"; /* Snake emoji */
+        }
+
+        /* Made with love section */
+        .love-section {
+            margin-top: auto; /* Move to the bottom */
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to 15cppgames.com</h1>
-    <ul>
-        <li><a href="15puzzle.cpp">15 Puzzle</a></li>
-        <li><a href="aestroid.cpp">Asteroid</a></li>
-        <li><a href="arkanoid.cpp">Arkanoid</a></li>
-        <li><a href="beyblade.cpp">Beyblade</a></li>
-        <li><a href="chess.cpp">Chess</a></li>
-        <li><a href="doodlejump.cpp">Doodle Jump</a></li>
-        <li><a href="snake.cpp">Snake</a></li>
-        <li><a href="tetris.cpp">Tetris</a></li>
-    </ul>
+    <section class="section">
+        <div class="container">
+            <h1 class="title is-1">Welcome to <span style="color: #4caf50;">15cppgames.com</span></h1>
+            <ul>
+                <li><span class="game-symbol"></span><a href="https://15puzzle.netlify.app/">15 Puzzle</a></li>
+                <li><span class="game-symbol"></span><a href="https://freeasteroids.org/">Asteroid</a></li>
+                <li><span class="game-symbol"></span><a href="https://arcadespot.com/game/arkanoid/">Arkanoid</a></li>
+                <li><span class="game-symbol"></span><a href="https://apgames.netlify.app/geo">Beyblade</a></li>
+                <li><span class="game-symbol"></span><a href="chess.com">Chess</a></li>
+                <li><span class="game-symbol"></span><a href="https://apgames.netlify.app/geo">Doodle Jump</a></li>
+                <li><span class="game-symbol snake-symbol"></span><a href="https://apgames.netlify.app/geo">Snake</a></li>
+                <li><span class="game-symbol"></span><a href="https://apgames.netlify.app/geo">Tetris</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Made with love section -->
+    <div class="love-section">
+        <p>Made with ❤️ by ascendantaditya</p>
+    </div>
 </body>
 </html>
